@@ -1,0 +1,24 @@
+.tooltip
+  position: absolute
+  top: -40px
+  left: 50%
+  background: #000
+  color: #fff
+  padding: 5px 10px
+  z-index: 5
+  white-space: nowrap
+  transform: translateX(-50%)
+  border-radius: 4px
+  font-size: 0.9rem
+
+  &:after
+    content: ''
+    display: block
+    border: 5px solid #000
+    border-bottom-color: transparent
+    border-left-color: transparent
+    border-right-color: transparent
+    width: 0
+    height: 0
+    position: absolute
+    bottom: -10px
