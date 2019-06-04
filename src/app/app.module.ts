@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { TooltipContainerComponent } from './tooltip-container/tooltip-container.component';
 import { TooltipInfoComponent } from './tooltip-info/tooltip-info.component';
 import { TooltipButtonComponent } from './tooltip-button/tooltip-button.component';
+import { TooltipService } from './services/tooltip.service';
+import { TooltipPositionDirective } from './directives/tooltip-position.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TooltipContainerComponent,
     TooltipInfoComponent,
-    TooltipButtonComponent
+    TooltipButtonComponent,
+    TooltipPositionDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TooltipService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

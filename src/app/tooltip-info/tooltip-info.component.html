@@ -1,3 +1,8 @@
-<div class="tooltip" *ngIf="isTooltipOpened">
+<div
+  class="tooltip"
+  *ngIf="isTooltipOpened"
+  appTooltipPosition
+  [appTooltipPositionOpened]="isTooltipOpened"
+  appTooltipPositionBottomCssClass="tooltip--bottom">
   {{tooltipText}}
 </div>
