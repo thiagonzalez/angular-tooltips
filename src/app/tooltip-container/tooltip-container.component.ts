@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {TooltipService} from '../services/tooltip.service';
 
 @Component({
@@ -22,6 +22,7 @@ export class TooltipContainerComponent implements OnInit {
 
   showTooltip(val: boolean) {
     this.tooltipService.toggleTooltip(false);
+
     this.isTooltipOpened = val;
   }
 }

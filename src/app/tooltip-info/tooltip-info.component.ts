@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, ElementRef, HostListener, Input} from '@angular/core';
 
 @Component({
   selector: 'app-tooltip-info',
