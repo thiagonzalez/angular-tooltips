@@ -1,27 +1,44 @@
-# AngularTooltips
-
+## Installation
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
-## Development server
+First, you need to execute `npm install` so you can have all the dependencies installed.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Start the server
+```
+ng serve
+```
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
-
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deploy to Github Pages
+```
+npm install i -g angular-cli-ghpages
+ng build --prod --base-href 'https://thiagonzalez.github.io/angular-tooltips/'
+ngh --dir ./dist/angular-tooltips
 
-## Running end-to-end tests
+```
+I am using Github Pages to host [this project](https://thiagonzalez.github.io/angular-tooltips/). 
+This command will commit the changes to the `gh-pages` branch and also push a deploy to Github Pages updating the environment.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## What I decided to use
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### angular-cli
+Easy way to create an application that already works. I decided to use it just to avoid creating everything from zero.
+
+### npm
+angular-cli generates the whole project using npm.
+
+### Sass
+Easy way to write CSS code. Open doors to use metodologies like BEM, which makes your code easier to read and maintain.
+
+### GH Pages
+A cloud environment provided by Github with almost zero configuration, which makes easier to provide a real URL for your project.
+
+## Problems
+I didn't have time to study how to create tests using Angular, which is pretty much different than React.
