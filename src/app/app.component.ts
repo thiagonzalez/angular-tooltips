@@ -7,8 +7,6 @@ import {TooltipService} from './services/tooltip.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-tooltips';
-
   constructor(private tooltipService: TooltipService) {}
 
   @HostListener('document:click', ['$event'])
