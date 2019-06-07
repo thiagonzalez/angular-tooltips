@@ -7,10 +7,10 @@ import { Component, Output, Input, EventEmitter } from '@angular/core';
 })
 
 export class TooltipButtonComponent {
-  @Input('buttonText') buttonText: string;
+  @Input() buttonText: string;
   @Output() showTooltip = new EventEmitter<boolean>();
 
-  onTooltipChange(){
+  onTooltipChange() {
     this.showTooltip.emit(true);
   }
 }

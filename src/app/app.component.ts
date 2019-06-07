@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import {TooltipService} from "./services/tooltip.service";
+import {TooltipService} from './services/tooltip.service';
 
 @Component({
   selector: 'app-root',

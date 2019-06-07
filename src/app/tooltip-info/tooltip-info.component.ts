@@ -7,6 +7,6 @@ import {Component, ElementRef, HostListener, Input} from '@angular/core';
 })
 
 export class TooltipInfoComponent {
-  @Input('isTooltipOpened') isTooltipOpened: boolean;
-  @Input('tooltipText') tooltipText: string;
+  @Input() isTooltipOpened: boolean;
+  @Input() tooltipText: string;
 }

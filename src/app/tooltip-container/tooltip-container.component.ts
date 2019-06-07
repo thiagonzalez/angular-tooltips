@@ -8,8 +8,8 @@ import {TooltipService} from '../services/tooltip.service';
 })
 
 export class TooltipContainerComponent implements OnInit {
-  @Input('buttonText') buttonText: string;
-  @Input('tooltipText') tooltipText: string;
+  @Input() buttonText: string;
+  @Input() tooltipText: string;
   isTooltipOpened = false;
 
   constructor(private tooltipService: TooltipService) {}
